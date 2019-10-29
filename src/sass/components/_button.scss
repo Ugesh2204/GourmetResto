@@ -1,0 +1,10 @@
+.btn {
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    color: $color-white;
+    background-color: $color-primary;
+    transition: all .2s;
+    &:hover {
+        transform: translate(-3px);
+    }
+}
