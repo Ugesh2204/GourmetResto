@@ -12,6 +12,17 @@ html {
 
 
 body {
-  
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+img {
+    width:100%;
+}
+li{list-style-type: none;}
+a {text-decoration: none;}
+

@@ -1,4 +1,53 @@
 header {
-    height: 20rem;
-    background-color: $color-primary-dark;
+    height: 100vh;
 }
+
+/*--contact-info-wrapper--*/
+.contact-info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 406px;
+    grid-template-areas:
+    'contact-tel contact-email contact-openinghours';
+}
+
+.contact-tel {
+    grid-area: contact-tel;
+}
+
+.contact-email {
+    grid-area: contact-email;
+}
+
+.contact-openinghours {
+    grid-area: contact-openinghours;
+}
+
+/*--nav-wrapper--*/
+.nav-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'branding-logo menu-top-nav'
+}
+/*--branding-logo--*/
+ .branding-logo {
+     grid-area: branding-logo;
+ }
+
+ /*--menu-top-nav--*/
+ .menu-top-nav {
+    grid-area: menu-top-nav;
+    ul {
+        display:flex;  
+    }
+    a {
+        display:block;
+        padding: 0.8rem 1rem;
+    }
+    &__btn {
+        background-color: $color-beige;
+        padding: 0.1rem;
+        a {color:$color-white;}
+    } 
+}
+    
